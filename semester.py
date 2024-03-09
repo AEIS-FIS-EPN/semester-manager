@@ -7,8 +7,29 @@
 '''
 
 import os
+import platform
 
-os.system('cls')
+# verificamos el sistema operativo
+
+print(platform.platform()[0])
+
+so = platform.platform()[0]
+
+if so.lower() == "m" or so.lower() == "l":
+    mac = 1
+    win = 0
+elif so.lower() == "w":
+    mac = 0
+    win = 1
+else:
+    print("Sistema Operativo no válido.")   
+
+
+if mac:
+    os.system("clear")
+elif win:
+    os.system('cls')
+    
 materias = []
 
 ruta_actual = os.getcwd()
@@ -16,6 +37,7 @@ ruta_actual = os.getcwd()
 # presentamos la ruta actual en la que se encuentra el usuario
 print("estas ubicado aquí: "+ ruta_actual)
 
+   
 # presentamos una decisión para saber si quiere que las carpetas se 
 # creen en la ubicación actual o quiere cambiar
 while True:
@@ -31,22 +53,31 @@ while True:
         break
     else:
         print("Opción no válida. Por favor, ingresa 'S' o 'N'.")       
-os.system('cls') 
 
+if mac:
+    os.system("clear")
+elif win:
+    os.system('cls')
 # conseguimos el semestre, que será el nombre de la carpeta en 
 # la que se crearán las demás carpetas
 semestre = input("Ingresa el semestre: ")
 
-os.system('cls') 
-
+if mac:
+    os.system("clear")
+elif win:
+    os.system('cls')
+    
 # obtenemos el número de materias que cursará el usuario
 num_materias = int(input("¿cuántas materias tendrás? "))
 for i in range(num_materias):
     materia = input("ingresa el nombre de la materia "+str(i+1)+": ")
     materias.append(materia)
 
-os.system('cls') 
-
+if mac:
+    os.system("clear")
+elif win:
+    os.system('cls')
+    
 # presentamos la información resumida antes de crear la carpeta
 print("revisa a información antes de proceder a la creación:")
 ruta_final = os.path.join(ruta,semestre)
