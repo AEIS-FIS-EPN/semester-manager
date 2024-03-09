@@ -20,7 +20,7 @@ print("estas ubicado aquí: "+ ruta_actual)
 # creen en la ubicación actual o quiere cambiar
 while True:
     here = input("¿Deseas usar la ruta actual? (S/N): ")
-    if here.lower() == "s":
+    if here.lower() == "s": 
         ruta = ruta_actual
         break
     elif here.lower() == "n":
