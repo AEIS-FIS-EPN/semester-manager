@@ -11,13 +11,10 @@ Este script tiene como finalidad ayudar a la creación de directorios para estud
 
 1. Clona o descarga este repositorio en tu computadora.
 2. Navega hasta el directorio donde has clonado/descargado el repositorio.
-3. Ejecuta el script `semester.py` o `semesterMAC.py` utilizando Python:
+3. Ejecuta el script `semester.py` utilizando Python:
     
         bash 
         $ python semester.py
-        $ python semesterMAC.py
-
-*Nota:* Utiliza la versión de tu Sistema Operativo
 
 ## Funcionalidades
 
