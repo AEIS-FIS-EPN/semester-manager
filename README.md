@@ -1,5 +1,5 @@
-# Sebastian Cruz
-### Semester Manager
+# Semester Manager
+### Sebastian Cruz
 #### App para creación de directorios para un semestre
 
 Este script tiene como finalidad ayudar a la creación de directorios para estudiantes al hacerlo de una forma más eficiente y rápida.
