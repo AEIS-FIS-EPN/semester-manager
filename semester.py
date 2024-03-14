@@ -46,7 +46,10 @@ while True:
         ruta = ruta_actual
         break
     elif here.lower() == "n":
-        os.system('cls')
+        if mac:
+            os.system("clear")
+        elif win:
+            os.system('cls')
         print("Pega la ruta en la que deseas crear las carpetas.")
         print("Puede ser una ruta relativa o absoluta.")
         ruta = input("tu ruta: ")
