@@ -14,7 +14,7 @@ Este script tiene como finalidad ayudar a la creación de directorios para estud
 3. Ejecuta el script `semester.py` utilizando Python:
     
         bash 
-        $ python semester.py
+        $ python3 semester.py
 
 ## Funcionalidades
 
